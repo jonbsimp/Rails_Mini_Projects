@@ -1,0 +1,26 @@
+<center>
+    <h1>Magic 8 Ball</h1>
+</center>
+<center>
+
+<%= flash[:alert] %>
+<br/>
+<br/>
+
+<%= flash[:notice] %>
+<br/>
+<br/>
+
+<form action="/magic" method= "GET">
+    <label for="input">Ask a question</label>
+    <input type="text" name="input"/>
+    <input type="submit"/>
+</form>
+
+
+<hr/>
+
+<div>
+    <%= link_to "Home", "/games" %>
+</div>
+</center>

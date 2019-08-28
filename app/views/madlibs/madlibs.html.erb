@@ -1,0 +1,39 @@
+<center>
+
+<h1>Mad Libs Mexico trip!</h1>
+</center>
+
+<%= flash[:alert] %>
+<hr/>
+
+<br/>
+<br/>
+<form action="/madlibs" method= "GET">
+    <label for="name">Enter a name</label>
+    <input type="text" name="name"/>
+    <br/>
+    <label for="object">Enter an object</label>
+    <input type="text" name="object"/>
+    <br/>
+    <label for="favorite_food">Enter your favorite food</label>
+    <input type="text" name="favorite_food"/>
+    <br/>
+
+    <label for="weapon">Choose a weapon</label>
+    <input type="text" name="weapon"/>
+    <br/>
+
+    <label for="sound">Enter a  sound</label>
+    <input type="text" name="sound"/>
+    <br/>
+    <label for="favorite_movie">Enter your favorite movie</label>
+    <input type="text" name="favorite_movie"/>
+
+    <br/>
+    <input type="submit"/>
+    <br/>
+    <br/>
+
+
+    <%= link_to "Home", "/games" %>
+</form>
